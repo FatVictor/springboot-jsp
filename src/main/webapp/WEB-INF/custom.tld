@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-jsptaglibrary_3_1.xsd"
+        version="3.1">
+    <tlib-version>1.0</tlib-version>
+    <short-name>com.vtn.tag</short-name>
+    <uri>com.vtn.tag</uri>
+
+    <tag>
+        <name>Hello</name>
+        <tag-class>com.vtn.tag.HelloTag</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+    <tag>
+        <name>Tag</name>
+        <tag-class>com.vtn.tag.TagWithAttr</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>value</name>
+        </attribute>
+    </tag>
+    <tag>
+        <name>Compress</name>
+        <tag-class>com.vtn.tag.Compress</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>type</name>
+        </attribute>
+    </tag>
+</taglib>
