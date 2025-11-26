@@ -3,11 +3,9 @@ package com.vtn.tag;
 import jakarta.servlet.jsp.tagext.SimpleTagSupport;
 import lombok.Setter;
 import lombok.SneakyThrows;
-import net.logicsquad.minifier.MinificationException;
 import net.logicsquad.minifier.css.CSSMinifier;
 import net.logicsquad.minifier.js.JSMinifier;
 
-import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
 
@@ -27,7 +25,6 @@ public class Compress extends SimpleTagSupport {
             getJspContext().getOut().write("<style type=\"text/css\">");
             getJspContext().getOut().write(out.toString());
             getJspContext().getOut().write("</style>");
-            ;
 
 
         } else {
